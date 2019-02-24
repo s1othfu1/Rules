@@ -1,32 +1,30 @@
 [Proxy Group]
-# 节点选项
+# 代理
 🔰 PROXY = select,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🐾 ALL
 
-# 海外流媒体服务策略组（适用于 YouTube, Netflix, Spotify, Amazon Prime Video, BBC, FOX+, AbemaTV 等海外流媒体服务） 
+# 流媒体服务 
 📺 MEDIA = select, 🔰 PROXY ,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🇯🇵 JP, 🇰🇷 KR, 🇸🇬 SG, 🇺🇸 US,🇩🇪 DE
 
-# Apple 服务策略组
+# 苹果服务
 🍎 APPLE = select, 🔘 DIRECT, 🔰 PROXY ,🇺🇸 US
 
-# 去广告以及隐私追踪保护、反运营商劫持开关
-⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/ADVERTISING.list
-
-# 国内服务策略组 
+# 国内服务 
 🏠 DOMESTIC = select, 🔘 DIRECT, 🔰 PROXY
 
-# Final 
+# 规则外服务
 ☁️ FINAL =  select, 🔰 PROXY , 🔘 DIRECT
+
+# 广告过滤 默认使用lhie1＆ConnersHua规则 
+⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/ADVERTISING.list
 
 
 🇭🇰 HK GOLD = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&class=gold, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
-
 
 🇭🇰 IPLC = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=iplc, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
 
 🇭🇰 WTT = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=wtt%20dia, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
 
 🇭🇰 AZURE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=azure, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
-
 
 🇨🇳 TW = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=tw&class=gold, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
 
