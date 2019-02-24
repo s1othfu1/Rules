@@ -29,8 +29,8 @@ DOMAIN-SUFFIX,mzstatic.com, 🍎 APPLE
 
 
 # NOTIFICATION
-AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), 🔘 DIRECT,notification-text="Remote Rule Updated",notification-interval=3
-AND,((DOMAIN,tgbot.lbyczf.com), (USER-AGENT,Surge*)), 🔘 DIRECT,notification-text="Profile Updated",notification-interval=3
+AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Remote Rule Updated",notification-interval=3
+AND,((DOMAIN,tgbot.lbyczf.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Profile Updated",notification-interval=3
 
 
 # RULESET
@@ -58,7 +58,7 @@ RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/proxy.list,
 
 RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic.list, 🏠 DOMESTIC
 
-RULE-SET,LAN,🔘 DIRECT
+RULE-SET,LAN,⭕️ DIRECT 
 
 
 
