@@ -6,13 +6,13 @@
 📺 MEDIA = select, 🔰 PROXY ,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🇯🇵 JP, 🇰🇷 KR, 🇸🇬 SG, 🇺🇸 US,🇩🇪 DE
 
 # 苹果服务
-🍎 APPLE = select, 🔘 DIRECT, 🔰 PROXY ,🇺🇸 US
-
+🍎 APPLE = select, ⭕️ DIRECT , 🔰 PROXY ,🇺🇸 US
+                    
 # 国内服务 
-🏠 DOMESTIC = select, 🔘 DIRECT, 🔰 PROXY
+🏠 DOMESTIC = select, ⭕️ DIRECT , 🔰 PROXY
 
 # 规则外服务
-☁️ FINAL =  select, 🔰 PROXY , 🔘 DIRECT
+☁️ FINAL =  select, 🔰 PROXY , ⭕️ DIRECT 
 
 # 广告过滤 默认使用lhie1＆ConnersHua规则 
 ⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/ADVERTISING.list
@@ -43,4 +43,4 @@
 🐾 ALL = select, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&type=all
 
 
-// rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = 🔘 DIRECT,ASDFGH = ?
+// rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = ?
