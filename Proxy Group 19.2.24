@@ -12,7 +12,7 @@
 🏠 DOMESTIC = select, 🔘 DIRECT, 🔰 PROXY
 
 # 规则外服务
-☁️ FINAL =  select, 🔰 PROXY , 🔘 DIRECT
+ FINAL =  select, 🔰 PROXY , 🔘 DIRECT
 
 # 广告过滤 默认使用lhie1＆ConnersHua规则 
 ⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/ADVERTISING.list
