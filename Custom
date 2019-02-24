@@ -1,1 +1,70 @@
+# Custom
+# Apple 服务加速
+USER-AGENT,AppStore*, 🍎 APPLE
+USER-AGENT,com.apple.appstored*, 🍎 APPLE
+USER-AGENT,TestFlight*, 🍎 APPLE
+DOMAIN-SUFFIX,apple.com, 🍎 APPLE
+DOMAIN-SUFFIX,icloud.com, 🍎 APPLE
+DOMAIN-SUFFIX,itunes.com, 🍎 APPLE
+DOMAIN-SUFFIX,me.com, 🍎 APPLE
+DOMAIN-SUFFIX,mzstatic.com, 🍎 APPLE
 
+# Walkr
+USER-AGENT,Walkr*, 🏠 DOMESTIC
+DOMAIN-SUFFIX,walkrgame.com, 🏠 DOMESTIC
+
+# Spark Gmail&Outlook
+USER-AGENT,Spark*,🇭🇰 AZURE
+DOMAIN-SUFFIX,gmail.com, 🇭🇰 AZURE
+DOMAIN-SUFFIX,googleapis.com, 🇭🇰 AZURE
+DOMAIN-SUFFIX,outlook.com, 🇭🇰 AZURE
+DOMAIN-SUFFIX,api.amplitude.com,🇭🇰 AZURE
+DOMAIN-SUFFIX,app.smartmailcloud.com, 🇭🇰 AZURE
+DOMAIN-SUFFIX,firebaseio.com, 🇭🇰 AZURE
+DOMAIN-SUFFIX,gate.hockeyapp.net, 🇭🇰 AZURE
+
+
+# SpeedTest 节点测速
+USER-AGENT,SpeedTest*, 🔰 PROXY
+
+
+# NOTIFICATION
+AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), 🔘 DIRECT,notification-text="Remote Rule Updated",notification-interval=3
+AND,((DOMAIN,tgbot.lbyczf.com), (USER-AGENT,Surge*)), 🔘 DIRECT,notification-text="Profile Updated",notification-interval=3
+
+
+# RULESET
+
+RULE-SET,SYSTEM, 🍎 APPLE
+
+# Advertising Block 去广告以及隐私追踪保护
+
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Advertising.list, ⛱ AD-BLOCK
+
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/reject.list, ⛱ AD-BLOCK
+
+# Internet Service Provider Hijacking 反运营商劫持
+
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Hijacking.list, ⛱ AD-BLOCK , notification-text="⚠️ 遭受运营商劫持，如页面异常请刷新"
+
+# 海外流媒体服务加速（适用于 YouTube, Netflix, Spotify, Amazon Prime Video, BBC, FOX+, AbemaTV 等海外流媒体服务）
+
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/global_media.list, 📺 MEDIA
+
+# 海外服务加速
+
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/proxy.list, 🔰 PROXY
+
+# 国内服务直连
+
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic.list, 🏠 DOMESTIC
+
+RULE-SET,LAN,🔘 DIRECT
+
+
+
+# 注释项
+
+-RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/apple.list,🍎 Only
+
+-RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/china_media.list,🍂 Domestic
