@@ -13,32 +13,28 @@ FINAL,☁️ FINAL,dns-failed
 
 ____________________________________________________________________________________________________________ 
 
-
-
-
-
-
 [Proxy Group]
 # 代理
 🔰 PROXY = select,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🐾 ALL
 
-# 流媒体服务 Medio
+# 流媒体服务   
 🎵 MUSIC =  select, 🔰 PROXY ,🇭🇰 HK GOLD, 🇺🇸 US,🇺🇸 US AZURE
 
 🎬 VIDEO = select, 🔰 PROXY ,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🇯🇵 JP, 🇰🇷 KR, 🇸🇬 SG, 🇺🇸 US,🇩🇪 DE
 
-# 苹果服务
+# 苹果服务  
 🍎 APPLE = select, ⭕️ DIRECT , 🔰 PROXY ,🇺🇸 US
                     
-# 国内服务 
+# 国内服务  
 🏠 DOMESTIC = select, ⭕️ DIRECT , 🔰 PROXY
 
 # 规则外服务
 ☁️ FINAL =  select, 🔰 PROXY , ⭕️ DIRECT 
 
-# 广告过滤 默认使用lhie1＆ConnersHua规则 
+# 广告过滤以及反劫持  
 ⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Adblock%20emoji.list
 
+# 节点选项
 🇭🇰 HK GOLD = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&class=gold, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
 
 🇭🇰 IPLC = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=iplc, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
@@ -63,8 +59,7 @@ ________________________________________________________________________________
 
 🐾 ALL = select, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&type=all
 
-// rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = 
-
+// rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = ？
 
 
 
