@@ -1,11 +1,13 @@
-Jsbox lhie1脚本 >> Surge 3 基本使用方法
+Jsbox lhie1脚本 >> Surge 3
+默认使用lhie1的规则，广告过滤策略加入了ConnersHua的规则
 
-1.# Proxy Group 填入代理分组
-  # Custom 填入代理规则
+1.# Proxy Group 填入进阶设置里的代理分组
+  # Custom 填入进阶设置里的代理规则
 
-2.用lhie1脚本导入Surge则末尾的 -RULE-SET 一起复制粘贴
+2.用lhie1脚本导入Surge 则末尾的 -RULE-SET 一起复制粘贴
 
-若用其它方式导入Surge则在末尾加上：
+若用其它方式导入Surge 则在末尾加上：
+
 GEOIP,CN,🏠 DOMESTIC
 FINAL,☁️ FINAL,dns-failed
 
