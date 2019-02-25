@@ -1,3 +1,24 @@
+Jsbox lhie1脚本 >> Surge 3 基本使用方法
+
+1.# Proxy Group 填入代理分组
+  # Custom 填入代理规则
+
+2.末尾的 -RULE-SET 不能遗漏
+
+若用其它方式导入Surge则在末尾加上：
+GEOIP,CN,🏠 DOMESTIC
+FINAL,☁️ FINAL,dns-failed
+
+3.导出格式选择 Surge TF
+
+__________________________________________
+
+
+
+
+
+
+
 [Proxy Group]
 # 代理
 🔰 PROXY = select,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🐾 ALL
@@ -18,7 +39,6 @@
 
 # 广告过滤 默认使用lhie1＆ConnersHua规则 
 ⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Adblock%20emoji.list
-
 
 🇭🇰 HK GOLD = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&class=gold, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
 
@@ -44,9 +64,7 @@
 
 🐾 ALL = select, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&type=all
 
-
 // rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = 
-
 
 
 
@@ -59,7 +77,6 @@ USER-AGENT,SpeedTest*, 🔰 PROXY
 USER-AGENT,Walkr*, 🏠 DOMESTIC
 DOMAIN-SUFFIX,walkrgame.com, 🏠 DOMESTIC
 
-
 # Spark Gmail&Outlook
 USER-AGENT,Spark*,🇭🇰 AZURE
 DOMAIN-SUFFIX,gmail.com, 🇭🇰 AZURE
@@ -70,11 +87,9 @@ DOMAIN-SUFFIX,app.smartmailcloud.com, 🇭🇰 AZURE
 DOMAIN-SUFFIX,firebaseio.com, 🇭🇰 AZURE
 DOMAIN-SUFFIX,gate.hockeyapp.net, 🇭🇰 AZURE
 
-
 # NOTIFICATION
 AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Remote Rule Updated",notification-interval=3
 AND,((DOMAIN,tgbot.lbyczf.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Profile Updated",notification-interval=3
-
 
 # SYSTEM
 RULE-SET,SYSTEM, ⭕️ DIRECT
@@ -98,14 +113,11 @@ RULE-SET, https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Video.li
 # 国外流媒体音乐代理 s1othfu1自用
 RULE-SET, https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Music.list, 🎵 MUSIC
 
-
 # 国内直连 lhie1
 RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic.list, 🏠 DOMESTIC
 RULE-SET,LAN,⭕️ DIRECT 
 
 # -RULE-SET 
 -RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/apple.list,🍎 Only
-
 -RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/china_media.list,🍂 Domestic
-
 -RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/global_media.list,🍃 Proxy
