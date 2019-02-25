@@ -107,5 +107,6 @@ RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic_me
 RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic.list, 🏠 DOMESTIC
 RULE-SET,LAN,⭕️ DIRECT 
 
+
 # -RULE-SET 
 -RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/foreign_media.list,🍃 Proxy
