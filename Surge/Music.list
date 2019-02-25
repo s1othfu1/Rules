@@ -1,0 +1,14 @@
+# Music
+# Spotify
+USER-AGENT,Spotify*
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spoti.fi
+
+# JOOX
+USER-AGENT,WeMusic*
+USER-AGENT,JOOX*
+DOMAIN-SUFFIX,joox.com
+
+# Pandora
+DOMAIN-SUFFIX,pandora.com
