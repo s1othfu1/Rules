@@ -113,11 +113,12 @@ RULE-SET, https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Video.li
 # 国外流媒体音乐代理 s1othfu1自用
 RULE-SET, https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Music.list, 🎵 MUSIC
 
+# 国内流媒体 lhie1
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic_media.list,🏠 DOMESTIC
+
 # 国内直连 lhie1
 RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic.list, 🏠 DOMESTIC
 RULE-SET,LAN,⭕️ DIRECT 
 
 # -RULE-SET 
--RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/apple.list,🍎 Only
--RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/china_media.list,🍂 Domestic
--RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/global_media.list,🍃 Proxy
+-RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/foreign_media.list,🍃 Proxy
