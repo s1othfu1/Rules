@@ -35,8 +35,11 @@ ________________________________________________________________________________
 # 规则外服务
 ☁️ FINAL =  select, 🔰 PROXY , ⭕️ DIRECT 
 
-# 广告过滤以及反劫持  
+# 广告过滤开关  
 ⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Adblock%20emoji.list
+
+# 反劫持保护开关
+⛱ PROTECTION = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/PROTECTION%20emoji.list
 
 # 节点选项
 🇭🇰 HK GOLD = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&class=gold, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
@@ -93,7 +96,7 @@ RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/reject.list
 RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Advertising.list, ⛱ AD-BLOCK
 
 # 反运营商劫持 ConnersHua
-RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Hijacking.list, ⛱ AD-BLOCK , notification-text="受运营商劫持❗️尝试刷新页面"
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Hijacking.list,PROTECTION
 
 # 国外代理 lhie1
 RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/proxy.list, 🔰 PROXY
@@ -112,5 +115,5 @@ RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic.li
 RULE-SET,LAN,⭕️ DIRECT 
 
 
-# -RULE-SET 
+# -RULE-SET 去除以下规则
 -RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/foreign_media.list,🍃 Proxy
