@@ -71,22 +71,22 @@ ________________________________________________________________________________
 
 
 # Custom
-# Apple 
+# Apple lhie1
 RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/apple.list,🍎 APPLE
 
 # SpeedTest 
 USER-AGENT,SpeedTest*, 🔰 PROXY
 
+# Surge 外部资源更新通知
+AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Rule Updated",notification-interval=3
+
+# SPARK Gmail&Outlook s1othfu1自用
+RULE-SET,https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Spark.list,🇭🇰 AZURE
+
 # Walkr
 USER-AGENT,Walkr*, 🏠 DOMESTIC
 DOMAIN-SUFFIX,walkrgame.com, 🏠 DOMESTIC
 
-# NOTIFICATION
-AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Remote Rule Updated",notification-interval=3
-AND,((DOMAIN,tgbot.lbyczf.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Profile Updated",notification-interval=3
-
-# Spark 邮箱
-RULE-SET,https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Spark.list,🇭🇰 AZURE
 
 # SYSTEM
 RULE-SET,SYSTEM, ⭕️ DIRECT
