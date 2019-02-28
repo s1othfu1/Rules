@@ -15,7 +15,7 @@ FINAL,☁️ FINAL,dns-failed
 
 4.导出格式选择 Surge TF
 
-____________________________________________________________________________________________________________ 
+===========================================================================================================================================
 
 [Proxy Group]
 # 代理
@@ -66,11 +66,13 @@ ________________________________________________________________________________
 
 🐾 ALL = select, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&type=all
 
+#  APP专用节点
 🇭🇰 *SPARK* = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&noclass=bronze&noisp=iplc, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
+
 
 // rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = ？
 
-
+===========================================================================================================================================
 
 # Custom
 # Apple lhie1
@@ -80,7 +82,7 @@ RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/apple.list,
 USER-AGENT,SpeedTest*, 🔰 PROXY
 
 # Surge 外部资源更新通知
-AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Rule Updated",notification-interval=3
+AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Rules Updated",notification-interval=3
 
 # SPARK Gmail&Outlook s1othfu1自用
 RULE-SET,https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Spark.list,🇭🇰 *SPARK*
@@ -88,7 +90,6 @@ RULE-SET,https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Spark.lis
 # Walkr
 USER-AGENT,Walkr*, 🏠 DOMESTIC
 DOMAIN-SUFFIX,walkrgame.com, 🏠 DOMESTIC
-
 
 # SYSTEM
 RULE-SET,SYSTEM, ⭕️ DIRECT
