@@ -66,6 +66,8 @@ ________________________________________________________________________________
 
 🐾 ALL = select, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&type=all
 
+🇭🇰 *SPARK* = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&noclass=bronze&noisp=iplc, url = http://www.gstatic.com/generate_204, interval = 1200, timeout = 5, tolerance = 300
+
 // rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = ？
 
 
@@ -81,7 +83,7 @@ USER-AGENT,SpeedTest*, 🔰 PROXY
 AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Rule Updated",notification-interval=3
 
 # SPARK Gmail&Outlook s1othfu1自用
-RULE-SET,https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Spark.list,🇭🇰 AZURE
+RULE-SET,https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Spark.list,🇭🇰 *SPARK*
 
 # Walkr
 USER-AGENT,Walkr*, 🏠 DOMESTIC
