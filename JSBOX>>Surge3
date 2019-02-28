@@ -42,32 +42,32 @@ FINAL,☁️ FINAL,dns-failed
 🥊 PROTECTION = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/PROTECTION%20emoji.list
 
 # 节点选项
-🇭🇰 HK GOLD = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&class=gold, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇭🇰 HK GOLD = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇭🇰 IPLC = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=iplc, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇭🇰 IPLC = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=iplc, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇭🇰 WTT = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=wtt%20dia, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇭🇰 WTT = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=wtt%20dia, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇭🇰 AZURE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=azure, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇭🇰 AZURE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=azure, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇨🇳 TW = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=tw&class=gold, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇨🇳 TW = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=tw&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇯🇵 JP = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=jp&class=gold, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇯🇵 JP = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=jp&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇰🇷 KR = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=kr&class=gold, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇰🇷 KR = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=kr&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇸🇬 SG = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=sg&class=gold, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3
+🇸🇬 SG = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=sg&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5
 
-🇺🇸 US = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=us&class=gold, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇺🇸 US = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=us&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇺🇸 US AZURE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=us&isp=azure, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇺🇸 US AZURE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=us&isp=azure, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
-🇩🇪 DE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=de&class=bronze, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇩🇪 DE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=de&class=bronze, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
 🐾 ALL = select, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&type=all
 
 #  APP专用节点
-🇭🇰 *SPARK* = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&noclass=bronze&noisp=iplc, url = http://www.gstatic.com/generate_204, interval = 900, tolerance = 50, timeout = 3 
+🇭🇰 *SPARK* = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&noclass=bronze&noisp=iplc, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
 
 
 // rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = ？
