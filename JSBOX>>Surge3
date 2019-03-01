@@ -1,5 +1,5 @@
 Jsbox lhie1脚本 >> Surge 3
-默认使用lhie1的规则，广告过滤策略加入了ConnersHua的规则
+使用脚本内置的lhie1规则（广告过滤策略加入了ConnersHua的规则） 要用其他规则自行替换
 
 1.# Proxy Group 填入进阶设置里的代理分组
   # Custom 填入进阶设置里的代理规则
