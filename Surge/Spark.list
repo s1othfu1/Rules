@@ -1,9 +1,9 @@
 # Spark 》Gmail&Outlook
-USER-AGENT,Spark*,🇭🇰 AZURE
-DOMAIN-SUFFIX,gmail.com, 🇭🇰 AZURE
-DOMAIN-SUFFIX,googleapis.com, 🇭🇰 AZURE
-DOMAIN-SUFFIX,outlook.com, 🇭🇰 AZURE
-DOMAIN-SUFFIX,api.amplitude.com,🇭🇰 AZURE
-DOMAIN-SUFFIX,app.smartmailcloud.com, 🇭🇰 AZURE
-DOMAIN-SUFFIX,firebaseio.com, 🇭🇰 AZURE
-DOMAIN-SUFFIX,gate.hockeyapp.net, 🇭🇰 AZURE
+USER-AGENT,Spark*
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,api.amplitude.com
+DOMAIN-SUFFIX,app.smartmailcloud.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,gate.hockeyapp.net
