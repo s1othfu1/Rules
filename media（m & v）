@@ -1,0 +1,95 @@
+[Proxy Group]
+# 代理
+🔰 PROXY = select,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🐾 ALL
+
+# 流媒体服务  
+📺 MEDIA = select, 🔰 PROXY ,🇭🇰 HK GOLD,🇭🇰 IPLC,🇭🇰 WTT,🇭🇰 AZURE,🇨🇳 TW,🇯🇵 JP, 🇰🇷 KR, 🇸🇬 SG, 🇺🇸 US,🇩🇪 DE
+
+# 苹果服务  
+🍎 APPLE = select, ⭕️ DIRECT , 🔰 PROXY ,🇺🇸 US
+                    
+# 国内服务  
+🏠 DOMESTIC = select, ⭕️ DIRECT , 🔰 PROXY
+
+# 规则外服务
+☁️ FINAL =  select, 🔰 PROXY , ⭕️ DIRECT 
+
+# 广告过滤开关  
+⛱ AD-BLOCK = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Adblock%20emoji.list
+
+# 反劫持保护开关
+🥊 PROTECTION = select, policy-path = https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/PROTECTION%20emoji.list
+
+# 节点选项
+🇭🇰 HK GOLD = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇭🇰 IPLC = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=iplc, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇭🇰 WTT = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=wtt%20dia, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇭🇰 AZURE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&isp=azure, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇨🇳 TW = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=tw&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇯🇵 JP = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=jp&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇰🇷 KR = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=kr&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇸🇬 SG = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=sg&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5
+
+🇺🇸 US = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=us&class=gold, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇺🇸 US AZURE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=us&isp=azure, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🇩🇪 DE = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=de&class=bronze, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5 
+
+🐾 ALL = select, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&type=all
+
+#  APP专用节点
+🇭🇰 *SPARK* = url-test, policy-path=https://dler.cloud/link/ASDFGH?is_mu=0&list=1&area=hk&noclass=bronze&noisp=iplc, url = http://www.gstatic.com/generate_204, interval = 800, tolerance = 50, timeout = 5
+
+
+// rename : 🍂 Domestic = 🏠 DOMESTIC , ☁️ Others = ☁️ FINAL , 🚀 Direct = ⭕️ DIRECT ,ASDFGH = 
+
+
+
+# Custom
+# Apple lhie1
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/apple.list,🍎 APPLE
+
+# SpeedTest 
+USER-AGENT,SpeedTest*, 🔰 PROXY
+
+# Surge 外部资源更新通知
+AND,((DOMAIN,raw.githubusercontent.com), (USER-AGENT,Surge*)), ⭕️ DIRECT,notification-text="Rules Updated",notification-interval=3
+
+# SPARK Gmail&Outlook s1othfu1自用
+RULE-SET,https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Spark.list,🇭🇰 *SPARK*
+
+# Walkr
+USER-AGENT,Walkr*, 🏠 DOMESTIC
+DOMAIN-SUFFIX,walkrgame.com, 🏠 DOMESTIC
+
+# SYSTEM
+RULE-SET,SYSTEM, ⭕️ DIRECT
+
+# 广告过滤规则 lhie1＆ConnersHua
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/reject.list, ⛱ AD-BLOCK
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Advertising.list, ⛱ AD-BLOCK
+
+# 反运营商劫持 ConnersHua
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Hijacking.list,🥊 PROTECTION
+
+# 国外流媒体代理 lhie1
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/foreign_media.list,📺 MEDIA
+
+# 国外代理 lhie1
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/proxy.list, 🔰 PROXY
+
+# 国内流媒体直连 lhie1
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic_media.list,🏠 DOMESTIC
+
+# 国内直连 lhie1
+RULE-SET,https://raw.githubusercontent.com/lhie1/Rules/master/Surge3/domestic.list, 🏠 DOMESTIC
+RULE-SET,LAN,⭕️ DIRECT 
+
