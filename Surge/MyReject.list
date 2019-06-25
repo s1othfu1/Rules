@@ -6,3 +6,11 @@ URL-REGEX,^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad\?f=
 
 #去除知乎分享按钮上部广告
 URL-REGEX,^https:\/\/pic1\.zhimg\.com\/70\/
+
+#知乎App去广告
+DOMAIN,mqtt.zhihu.com
+DOMAIN-SUFFIX,xdrig.com
+URL-REGEX,https://api.zhihu.com/(fringe|zst|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|.*launch|.*featured-comment-ad|.*recommendations|search/(top|tabs|preset))
+USER-AGENT,AVOS*
+AND,((USER-AGENT,ZhihuHybrid*), (NOT,((DOMAIN,www.zhihu.com))), (NOT,((DOMAIN,static.zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
+AND,((USER-AGENT,osee2*), (NOT,((DOMAIN,api.zhihu.com))), (NOT,((DOMAIN,lens.zhihu.com))), (NOT,((DOMAIN,static.zhihu.com))), (NOT,((DOMAIN,www.zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
