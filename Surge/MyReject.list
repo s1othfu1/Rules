@@ -4,3 +4,5 @@ URL-REGEX,http://v.icbc.com.cn/userfiles/Resources/WAP/advertisement/
 #微信公众号文章底部广告
 URL-REGEX,^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad\?f=
 
+#去除知乎分享按钮上部广告
+URL-REGEX,^https:\/\/pic1\.zhimg\.com\/70\/
