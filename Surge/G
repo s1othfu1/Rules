@@ -19,17 +19,17 @@ allow-wifi-access = true
 ⛱ AD-BLOCK = select, policy-path=https://raw.githubusercontent.com/s1othfu1/Rules/master/Surge/Adblock%20emoji.list
 
 
-🇭🇰 BGP🍂 = url-test, policy-path=https://dler.cloud/link/is_mu=1&list=1&area=hk&isp=bgp, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
+🇭🇰 BGP🍂 = url-test, policy-path=https://dler.cloud/link/?is_mu=1&list=1&area=hk&isp=bgp, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
 
 
-🇭🇰 IPLC🍂 = url-test, policy-path=https://dler.cloud/link/is_mu=1&list=1&area=hk&isp=iplc, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
+🇭🇰 IPLC🍂 = url-test, policy-path=https://dler.cloud/link/?is_mu=1&list=1&area=hk&isp=iplc, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
 
-🇭🇰 HGC = url-test, policy-path=https://dler.cloud/link/is_mu=1&list=1&area=hk&isp=hgc, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
+🇭🇰 HGC = url-test, policy-path=https://dler.cloud/link/?is_mu=1&list=1&area=hk&isp=hgc, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
 
-🇭🇰 PCCW = url-test, policy-path=https://dler.cloud/link/is_mu=1&list=1&area=hk&isp=pccw, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
+🇭🇰 PCCW = url-test, policy-path=https://dler.cloud/link/?is_mu=1&list=1&area=hk&isp=pccw, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
 
-🇨🇳 台湾 = url-test, policy-path=https://dler.cloud/link/is_mu=1&list=1&area=tw&isp=cht, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
-🐾 ALL = select, policy-path=https://dler.cloud/link/is_mu=0&list=1&type=all
+🇨🇳 台湾 = url-test, policy-path=https://dler.cloud/link/?is_mu=1&list=1&area=tw&isp=cht, url=http://www.qualcomm.cn/generate_204, interval=800, timeout=5, tolerance=50
+🐾 ALL = select, policy-path=https://dler.cloud/link/?is_mu=0&list=1&type=all
 
 [Rule]
 # Client
