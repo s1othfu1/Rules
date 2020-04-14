@@ -1,9 +1,0 @@
-#!name=JD Price
-#!desc=京东历史价格查询.
-
-[Script]
-type=http-request,pattern=https://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) script-path= https://github.com/yichahucha/surge/raw/master/jd_price.js
-
-
-[MITM]
-hostname = %APPEND% api.m.jd.com
