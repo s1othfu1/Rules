@@ -1,7 +1,5 @@
-
 #!name=JD_Price
 #!desc=京东历史价格查询.
-
 
 [Script]
 type=http-request,pattern= https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
