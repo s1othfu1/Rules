@@ -2,7 +2,7 @@
 #!desc=京东历史价格查询.
 
 [Script]
-type=http-request,pattern= https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+type=http-request, pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),type=http-response
 
 [MITM]
 hostname = %APPEND% api.m.jd.com
