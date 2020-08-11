@@ -167,3 +167,6 @@ hostname = duckduckgo.com
 
 # 无指令: 谷歌
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
+
+# wow Classic 
+^https:\/\/duckduckgo.com\/\?q=wow\+([^&]+).+ url 302 https://duckduckgo.com/? http://cn.60wdb.com/search?utf8=✓&q=$1
